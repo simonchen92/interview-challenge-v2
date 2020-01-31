@@ -14,7 +14,7 @@ class ListCard extends Component {
       <Base className="card">
       <h1 className="card-header">{header}</h1>
       <div className="card-item-container">
-      {items.map(item => <li>{item}</li>)}
+      <ul>{items.map((item, index) => <li key={index}>{item}</li>)}</ul>
       </div>
       </Base>
     );
