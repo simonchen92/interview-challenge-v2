@@ -11,7 +11,7 @@ class App extends Component {
         </header>
         <div className="component-list">
           <Button href="#" theme='go'> Button </Button>
-          <ListCard header={'header'} items={['a', 'b']}>Items</ListCard>
+          <ListCard header={'Header'} items={['Item 1', 'Item 2', 'Item 3']}>Items</ListCard>
         </div>
       </div>
     );

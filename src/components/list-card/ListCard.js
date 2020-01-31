@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Card as Base } from '@material-ui/core';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
+
+import './ListCard.scss'
 
 class ListCard extends Component {
 
@@ -12,7 +14,7 @@ class ListCard extends Component {
       <Base className="card">
       <h1 className="card-header">{header}</h1>
       <div className="card-item-container">
-      <ul>{items.map(item => <li>{item}</li>)}</ul>
+      {items.map(item => <li>{item}</li>)}
       </div>
       </Base>
     );
